@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
   bool _isSplashDone = false;
-  ThemeMode _themeMode = ThemeMode.system; // ✅ الوضع الافتراضي حسب الجهاز
+  ThemeMode _themeMode = ThemeMode.system;
 
   void setLocale(Locale locale) {
     setState(() {

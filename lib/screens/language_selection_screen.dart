@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'governorate_search_screen.dart';
+import 'about_screen.dart'; // ✅ استدعاء شاشة About
 
 class LanguageSelectionScreen extends StatelessWidget {
   final void Function(Locale locale) onLocaleSelected;
@@ -21,6 +22,7 @@ class LanguageSelectionScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          /// الخلفية
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 500),
             child: Image.asset(
@@ -35,15 +37,36 @@ class LanguageSelectionScreen extends StatelessWidget {
           ),
           Container(color: Colors.black.withOpacity(0.2)),
 
+          /// زر التبديل بين الثيمات + أيقونة About
           Positioned(
             top: 40,
             right: 20,
-            child: IconButton(
-              icon: const Icon(Icons.brightness_6, color: Colors.white, size: 35),
-              onPressed: onToggleTheme,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.info_outline,
+                      color: Colors.white, size: 30),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const AboutScreen(language: 'en'),
+                      ),
+                    );
+                  },
+                ),
+                const SizedBox(width: 10),
+                IconButton(
+                  icon: const Icon(Icons.brightness_6,
+                      color: Colors.white, size: 30),
+                  onPressed: onToggleTheme,
+                ),
+              ],
             ),
           ),
 
+          /// الأزرار في منتصف الشاشة
           Align(
             alignment: Alignment.topCenter,
             child: Padding(
@@ -60,7 +83,8 @@ class LanguageSelectionScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => const GovernorateSelectionScreen(language: 'ar'),
+                            builder: (_) =>
+                            const GovernorateSelectionScreen(language: 'ar'),
                           ),
                         );
                       },
@@ -89,7 +113,8 @@ class LanguageSelectionScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (_) => const GovernorateSelectionScreen(language: 'en'),
+                            builder: (_) =>
+                            const GovernorateSelectionScreen(language: 'en'),
                           ),
                         );
                       },
@@ -109,6 +134,22 @@ class LanguageSelectionScreen extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+
+          /// حقوق الملكية أسفل الصفحة
+          Positioned(
+            bottom: 20,
+            left: 0,
+            right: 0,
+            child: const Text(
+              '© 2025 Aya Reda Elnagar. All rights reserved.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white70,
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
               ),
             ),
           ),
