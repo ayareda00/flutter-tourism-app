@@ -34,3 +34,5 @@ The app also provides **real-time weather info**, **Google Maps integration**, a
 ---
 
 ## 📂 **Project Structure**
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/4c65fab0-e4fc-4e9d-af04-2f3b77d62893" />
+
