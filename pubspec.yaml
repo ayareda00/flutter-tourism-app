@@ -1,5 +1,5 @@
 name: second
-description: "A new Flutter project."
+description: "Khota Baladna 🇪🇬 - Your guide to discover Egypt's hidden gems and tourist attractions."
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -10,36 +10,26 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # ✅ لتخزين الإعدادات بشكل آمن
   flutter_secure_storage: ^9.0.0
 
-  # ✅ لدعم تعدد اللغات
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2
 
-  # ✅ أيقونات iOS
   cupertino_icons: ^1.0.8
 
-  # ✅ للتعامل مع API (مثلاً الطقس)
   http: ^1.1.0
 
-  # ✅ لفتح الروابط الخارجية مثل Google Maps
   url_launcher: ^6.2.4
 
-  # ✅ لمشاركة الأماكن عبر التطبيقات (WhatsApp, Messenger)
   share_plus: ^7.0.2
 
-  # ✅ لعرض الخرائط داخل التطبيق
   google_maps_flutter: ^2.6.0
 
-  # ✅ للحصول على الموقع الحالي للمستخدم
   geolocator: ^10.1.0
 
-  # ✅ لتحميل الصور بكفاءة وتحسين الأداء
   cached_network_image: ^3.3.1
 
-  # ✅ لتغيير السمات (ثيم الوضع الليلي والنهاري)
   provider: ^6.1.2
 
 dev_dependencies:
@@ -61,3 +51,6 @@ flutter:
     - family: Cairo
       fonts:
         - asset: assets/fonts/Cairo-Regular.ttf
+
+
+

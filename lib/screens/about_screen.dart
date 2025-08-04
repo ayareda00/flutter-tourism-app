@@ -28,7 +28,7 @@ class _AboutScreenState extends State<AboutScreen> {
 
   @override
   Widget build(BuildContext context) {
-    const Color primaryColor = Color(0xFF7F5624); // البني في الوضع الفاتح
+    const Color primaryColor = Color(0xFF7F5624);
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
@@ -51,14 +51,12 @@ class _AboutScreenState extends State<AboutScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              /// عنوان التطبيق
               Text(
                 currentLanguage == 'ar' ? 'خُطى بلدنا 🇪🇬' : 'Khota Baladna 🇪🇬',
                 style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 10),
 
-              /// حقوق الملكية
               Text(
                 currentLanguage == 'ar'
                     ? '© 2025 خُطى بلدنا. جميع الحقوق محفوظة. المطورة: آية رضا النجار'
@@ -67,7 +65,6 @@ class _AboutScreenState extends State<AboutScreen> {
               ),
               const SizedBox(height: 20),
 
-              /// وصف التطبيق
               Text(
                 currentLanguage == 'ar'
                     ? '''
@@ -84,7 +81,6 @@ Its mission is to promote domestic tourism and help people explore historical, c
               ),
               const SizedBox(height: 25),
 
-              /// الأزرار (سياسة الخصوصية - الشروط)
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -131,7 +127,6 @@ Its mission is to promote domestic tourism and help people explore historical, c
               const Divider(thickness: 1),
               const SizedBox(height: 15),
 
-              /// قسم التواصل
               Text(currentLanguage == 'ar' ? 'تواصل معنا' : 'Contact Us',
                   style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               const SizedBox(height: 10),

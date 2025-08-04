@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'governorate_search_screen.dart';
-import 'about_screen.dart'; // ✅ استدعاء شاشة About
+import 'about_screen.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   final void Function(Locale locale) onLocaleSelected;
@@ -22,7 +22,6 @@ class LanguageSelectionScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          /// الخلفية
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 500),
             child: Image.asset(
@@ -37,7 +36,6 @@ class LanguageSelectionScreen extends StatelessWidget {
           ),
           Container(color: Colors.black.withOpacity(0.2)),
 
-          /// زر التبديل بين الثيمات + أيقونة About
           Positioned(
             top: 40,
             right: 20,
@@ -66,7 +64,6 @@ class LanguageSelectionScreen extends StatelessWidget {
             ),
           ),
 
-          /// الأزرار في منتصف الشاشة
           Align(
             alignment: Alignment.topCenter,
             child: Padding(
@@ -138,7 +135,6 @@ class LanguageSelectionScreen extends StatelessWidget {
             ),
           ),
 
-          /// حقوق الملكية أسفل الصفحة
           Positioned(
             bottom: 20,
             left: 0,
