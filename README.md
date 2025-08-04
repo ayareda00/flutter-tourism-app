@@ -1,20 +1,36 @@
-# second
+# 🌍 Khota Baladna 🇪🇬
 
-A new Flutter project.
+**Khota Baladna** is a **Flutter-based tourism application** that helps users explore **Egyptian governorates, cities, and tourist attractions** with **Arabic and English language support**.  
+The app also provides **real-time weather info**, **Google Maps integration**, and **sharing options**.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 **Live Demo**
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Open%20App-blue?style=for-the-badge)](https://tourism-avri4t4a1-aya-s-projects-d7cc28b1.vercel.app/)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ **Features**
+✔ Browse **all 27 Egyptian governorates**.  
+✔ View **cities and tourist attractions** for each governorate.  
+✔ **Dark mode & Light mode** support.  
+✔ **Real-time weather data** using OpenWeather API.  
+✔ **Share places** easily with friends.  
+✔ Open location in **Google Maps**.  
+✔ **Responsive web version** deployed on **Vercel**.  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
 
-# Flutter Tourism App
+## 🛠 **Technologies Used**
+- **Flutter 3.x**
+- **Dart**
+- **OpenWeather API** (weather data)
+- **google_maps_flutter**
+- **share_plus**
+- **flutter_secure_storage** (secure storage)
+- **intl** (localization)
+- **Vercel** (web deployment)
 
-✅ Live Demo: [View App on Vercel](https://tourism-avri4t4a1-aya-s-projects-d7cc28b1.vercel.app/)
+---
+
+## 📂 **Project Structure**
