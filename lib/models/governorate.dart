@@ -1,4 +1,3 @@
-// lib/models/governorate.dart
 import 'city.dart';
 
 class Governorate {

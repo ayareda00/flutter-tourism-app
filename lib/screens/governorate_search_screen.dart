@@ -21,7 +21,7 @@ class _GovernorateSelectionScreenState extends State<GovernorateSelectionScreen>
   @override
   void initState() {
     super.initState();
-    governorates = allGovernorates; // البيانات من ملف data
+    governorates = allGovernorates;
     filteredGovernorates = List.from(governorates);
   }
 

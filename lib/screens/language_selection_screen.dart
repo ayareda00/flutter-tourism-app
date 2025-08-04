@@ -3,7 +3,7 @@ import 'governorate_search_screen.dart';
 
 class LanguageSelectionScreen extends StatelessWidget {
   final void Function(Locale locale) onLocaleSelected;
-  final VoidCallback onToggleTheme; // ✅ للتبديل بين الوضعين
+  final VoidCallback onToggleTheme;
 
   const LanguageSelectionScreen({
     super.key,
@@ -21,7 +21,6 @@ class LanguageSelectionScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // ✅ صورة الخلفية مع تبديل الوضع
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 500),
             child: Image.asset(
@@ -36,7 +35,6 @@ class LanguageSelectionScreen extends StatelessWidget {
           ),
           Container(color: Colors.black.withOpacity(0.2)),
 
-          // ✅ زر الوضع الداكن في أعلى يمين الشاشة
           Positioned(
             top: 40,
             right: 20,
@@ -46,7 +44,6 @@ class LanguageSelectionScreen extends StatelessWidget {
             ),
           ),
 
-          // ✅ الأزرار في المنتصف
           Align(
             alignment: Alignment.topCenter,
             child: Padding(

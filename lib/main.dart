@@ -67,11 +67,11 @@ class _MyAppState extends State<MyApp> {
           foregroundColor: Colors.white,
         ),
       ),
-      themeMode: _themeMode, // ✅ التبديل بين Light/Dark
+      themeMode: _themeMode,
       home: _isSplashDone
           ? LanguageSelectionScreen(
         onLocaleSelected: setLocale,
-        onToggleTheme: toggleTheme, // ✅ نمرر الفنكشن
+        onToggleTheme: toggleTheme,
       )
           : SplashScreen(onSplashEnd: finishSplash),
     );

@@ -102,9 +102,9 @@ class PlaceDetailsScreen extends StatelessWidget {
                     label: language == 'ar' ? 'عرض على الخريطة' : 'Show on Map',
                     onTap: () => _openInMaps(context),
                     textColor:
-                    isDarkMode ? Colors.white : Colors.black, // أخضر في Light
+                    isDarkMode ? Colors.white : Colors.black,
                     iconColor:
-                    isDarkMode ? Colors.white : Colors.green, // أخضر في Light
+                    isDarkMode ? Colors.white : Colors.green,
                     backgroundColor:
                     isDarkMode ? Colors.grey[700]! : Colors.white,
                   ),
@@ -117,9 +117,9 @@ class PlaceDetailsScreen extends StatelessWidget {
                     label: language == 'ar' ? 'مشاركة' : 'Share',
                     onTap: () => _sharePlace(context),
                     textColor:
-                    isDarkMode ? Colors.white : Colors.black, // أزرق في Light
+                    isDarkMode ? Colors.white : Colors.black,
                     iconColor:
-                    isDarkMode ? Colors.white : Colors.blue, // أزرق في Light
+                    isDarkMode ? Colors.white : Colors.blue,
                     backgroundColor:
                     isDarkMode ? Colors.grey[700]! : Colors.white,
                   ),
@@ -153,9 +153,9 @@ class PlaceDetailsScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.25), // ظل أغمق
-              blurRadius: 10, // زيادة الضبابية
-              offset: const Offset(0, 6), // ظل أوطى
+              color: Colors.black.withOpacity(0.25),
+              blurRadius: 10,
+              offset: const Offset(0, 6),
             ),
           ],
         ),
